@@ -22,7 +22,6 @@ target_link_libraries(${PROJECT_NAME}
         -Wl,--start-group
         gcc m c
         -Wl,--whole-archive
-        kendryte
         -Wl,--no-whole-archive
         -Wl,--end-group
         )

@@ -23,7 +23,6 @@ header_directories(${SDK_ROOT}/lib)
 header_directories(src/${PROJ})
 header_directories(kendryte-standalone-demo/${PROJ})
 # build library first
-add_subdirectory(lib)
 
 # compile project
 add_source_files(src/${PROJ}/*.c src/${PROJ}/*.s src/${PROJ}/*.S src/${PROJ}/*.cpp)

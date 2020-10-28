@@ -26,7 +26,7 @@ rm -f Makefile > /dev/null 2>&1
 cp -f ../lds/bootloader_lo.ld ../lds/kendryte.ld
 echo
 echo "=== Running 'cmake'"
-cmake .. -DPROJ=bootloader_lo -DTOOLCHAIN=${TOOLCHAIN_PATH} > /dev/null 2>&1
+cmake .. -DPROJ=bootloader_lo -DTOOLCHAIN=${TOOLCHAIN_PATH}
 if [ $? -ne 0 ]; then
     echo "cmake ERROR"
     exit 1
